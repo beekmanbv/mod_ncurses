@@ -521,7 +521,7 @@ ZEND_END_ARG_INFO()
 #define arginfo_ncurses_wstandout arginfo_ncurses_werase
 
 ZEND_BEGIN_ARG_WITH_RETURN_OBJ_INFO_EX(arginfo_ncurses_new_panel, 0, 1, resource, 0)
-	ZEND_ARG_OBJ_INFO(0, panel, resource, 0)
+	ZEND_ARG_OBJ_INFO(0, window, resource, 0)
 ZEND_END_ARG_INFO()
 
 ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_ncurses_del_panel, 0, 1, _IS_BOOL, 0)

@@ -154,7 +154,7 @@ function ncurses_wattron(resource $window, int $attrs): int { }
 function ncurses_wattrset(resource $window, int $attrs): int { }
 function ncurses_wstandend(resource $window): int { }
 function ncurses_wstandout(resource $window): int { }
-function ncurses_new_panel(resource $panel): resource { }
+function ncurses_new_panel(resource $window): resource { }
 function ncurses_del_panel(resource $panel): bool { }
 function ncurses_hide_panel(resource $panel): int { }
 function ncurses_show_panel(resource $panel): int { }

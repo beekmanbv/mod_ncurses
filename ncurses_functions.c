@@ -2042,7 +2042,7 @@ PHP_FUNCTION(ncurses_longname)
    Returns and sets mouse options */
 PHP_FUNCTION(ncurses_mousemask)
 {
-	ulong oldmask;
+	int oldmask;
 	ulong retval;
 	zval *param;
 	zend_long newmask;
