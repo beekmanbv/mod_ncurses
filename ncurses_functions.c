@@ -2547,7 +2547,7 @@ PHP_FUNCTION(ncurses_new_panel)
 	} else {
         #if PHP_MAJOR_VERSION >= 7
                 ZVAL_RES(return_value,  zend_register_resource(panel, le_ncurses_panels));
-                /* zend_resource *id = zend_register_resource(panel, le_ncurses_windows); */
+                set_panel_userptr(*panel,return_value);
         #else
                 long id = ZEND_REGISTER_RESOURCE(return_value, panel, le_ncurses_panels);
                 set_panel_userptr(*panel, (void*)id);
